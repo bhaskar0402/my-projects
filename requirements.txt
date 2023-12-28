@@ -1,2 +1,10 @@
+panda 
 numpy
-pandas
+python-dotenv
+scikit-learn
+mysql-connector-python
+pymysql
+matplotlib
+plotly.express
+seaborn
+#-e .
