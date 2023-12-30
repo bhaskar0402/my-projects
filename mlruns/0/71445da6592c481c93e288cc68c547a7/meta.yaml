@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/bhaskaradhikari/new%20project%20/mlruns/0/71445da6592c481c93e288cc68c547a7/artifacts
+end_time: 1703966858926
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 71445da6592c481c93e288cc68c547a7
+run_name: funny-crane-283
+run_uuid: 71445da6592c481c93e288cc68c547a7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1703966853256
+status: 3
+tags: []
+user_id: bhaskaradhikari

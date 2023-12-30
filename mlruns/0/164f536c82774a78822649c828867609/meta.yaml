@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/bhaskaradhikari/new%20project%20/mlruns/0/164f536c82774a78822649c828867609/artifacts
+end_time: 1703966798906
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 164f536c82774a78822649c828867609
+run_name: efficient-slug-448
+run_uuid: 164f536c82774a78822649c828867609
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1703966790013
+status: 3
+tags: []
+user_id: bhaskaradhikari

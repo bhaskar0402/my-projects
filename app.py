@@ -1,32 +1,44 @@
-from src.logger import logging
-from src.exception import CustomException
-from src.components.data_ingestion import DataIngestion
-from src.components.data_ingestion import DataIngestionConfig
-from src.components.data_transformation import DataTransformationConfig,DataTransformation
-from src.components.model_trainer import ModelTrainerConfig,ModelTrainer
+from flask import Flask,request,render_template
+import numpy as np
+import pandas as pd
 
+from sklearn.preprocessing import StandardScaler
+from src.pipeline.predict_pipeline import CustomData,PredictPipeline
 
-import sys
+application=Flask(__name__)
 
+app=application
+
+## Route for a home page
+
+@app.route('/')
+def index():
+    return render_template('index.html') 
+
+@app.route('/predictdata',methods=['GET','POST'])
+def predict_datapoint():
+    if request.method=='GET':
+        return render_template('home.html')
+    else:
+        data=CustomData(
+            age=int(request.form.get('age')),
+            sex=request.form.get('sex'),
+            bmi=float(request.form.get('bmi')),
+            children=int(request.form.get('children')),
+            smoker=request.form.get('smoker'),
+            region=request.form.get('region'),
+        )
+
+        pred_df=data.get_data_as_data_frame()
+        print(pred_df)
+        print("Before Prediction")
+
+        predict_pipeline=PredictPipeline()
+        print("Mid Prediction")
+        results=predict_pipeline.predict(pred_df)
+        print("after Prediction")
+        return render_template('index.html',results=results[0])
+    
 
 if __name__=="__main__":
-    logging.info("The execution has started")
-
-    try:
-        #data_ingestion_config=DataIngestionConfig()
-        data_ingestion=DataIngestion()
-        data_ingestion.initiate_data_ingestion()
-        train_data_path,test_data_path = data_ingestion.initiate_data_ingestion()
-
-        data_transformation_config=DataTransformationConfig()
-        data_transformation=DataTransformation()
-        train_arr,test_arr,_=data_transformation.initiate_data_transormation(train_data_path,test_data_path)
-        #print(train_arr)
-        # Model Training
-
-        model_trainer=ModelTrainer()
-        print(model_trainer.initiate_model_trainer(train_arr,test_arr))
-        
-    except Exception as e:
-        logging.info("Custom Exception")
-        raise CustomException(e,sys)
+    app.run(debug=True)
