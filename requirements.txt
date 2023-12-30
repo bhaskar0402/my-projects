@@ -7,4 +7,5 @@ pymysql
 matplotlib
 plotly.express
 seaborn
+xgboost
 #-e .
