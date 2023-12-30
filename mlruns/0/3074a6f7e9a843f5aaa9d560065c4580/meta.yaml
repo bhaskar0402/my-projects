@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/bhaskaradhikari/new%20project%20/mlruns/0/3074a6f7e9a843f5aaa9d560065c4580/artifacts
+end_time: 1703927461055
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3074a6f7e9a843f5aaa9d560065c4580
+run_name: vaunted-hound-674
+run_uuid: 3074a6f7e9a843f5aaa9d560065c4580
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1703927451807
+status: 3
+tags: []
+user_id: bhaskaradhikari
