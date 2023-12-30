@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/bhaskaradhikari/new%20project%20/mlruns/0/fd54ecdab1754aad943382e1b3650767/artifacts
+end_time: 1703954775646
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: fd54ecdab1754aad943382e1b3650767
+run_name: defiant-hawk-269
+run_uuid: fd54ecdab1754aad943382e1b3650767
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1703954767670
+status: 3
+tags: []
+user_id: bhaskaradhikari

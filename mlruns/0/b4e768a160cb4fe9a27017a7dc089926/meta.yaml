@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/bhaskaradhikari/new%20project%20/mlruns/0/b4e768a160cb4fe9a27017a7dc089926/artifacts
+end_time: 1703930815275
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b4e768a160cb4fe9a27017a7dc089926
+run_name: salty-goose-607
+run_uuid: b4e768a160cb4fe9a27017a7dc089926
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1703930789318
+status: 3
+tags: []
+user_id: bhaskaradhikari

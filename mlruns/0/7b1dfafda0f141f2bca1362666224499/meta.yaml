@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/bhaskaradhikari/new%20project%20/mlruns/0/7b1dfafda0f141f2bca1362666224499/artifacts
+end_time: 1703931050032
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7b1dfafda0f141f2bca1362666224499
+run_name: hilarious-mare-650
+run_uuid: 7b1dfafda0f141f2bca1362666224499
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1703931036283
+status: 3
+tags: []
+user_id: bhaskaradhikari

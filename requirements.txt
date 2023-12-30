@@ -9,4 +9,5 @@ plotly.express
 seaborn
 xgboost
 mlflow
+Flask
 #-e .

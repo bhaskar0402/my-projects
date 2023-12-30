@@ -25,7 +25,7 @@ from src.utils import save_object,evaluate_models
 @dataclass
 class ModelTrainerConfig:
     trained_model_file_path=os.path.join("artifacts","model.pkl")
-
+    
 class ModelTrainer:
     def __init__(self):
         self.model_trainer_config=ModelTrainerConfig()
@@ -66,6 +66,7 @@ class ModelTrainer:
             best_model_name = list(model_report.keys())[
                 list(model_report.values()).index(best_model_score)
             ]
+            global best_model
             best_model = models[best_model_name]
 
             print("This is the best model:")
@@ -111,9 +112,11 @@ class ModelTrainer:
 
             r2_square = r2_score(y_test, predicted)
             print(r2_square)
-            return r2_square
-
-
-
+            return r2_square        
+        
         except Exception as e:
             raise CustomException(e,sys)
+        
+    def pas_best_model():
+        return best_model
+
