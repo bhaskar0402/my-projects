@@ -107,11 +107,4 @@ class DataTransformation:
             )
         except Exception as e:
             raise CustomException(e,sys)
-    def input_data_transformation(self,input_df):
-        try:
-            preprocessing_obj_input =self.get_data_transformer_object()
-            input_feature_arr=preprocessing_obj_input.fit_transform(input_df)
-
-            return input_feature_arr
-        except Exception as e:
-             raise CustomException(e,sys)
+   

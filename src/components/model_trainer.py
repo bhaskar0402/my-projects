@@ -116,7 +116,5 @@ class ModelTrainer:
         
         except Exception as e:
             raise CustomException(e,sys)
-        
-    def pas_best_model():
-        return best_model
+
 
