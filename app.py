@@ -40,11 +40,7 @@ def predict_datapoint():
         
         return render_template('index.html',results=results[0])
     
-
 if __name__=="__main__":
-<<<<<<< HEAD:app.py
-   # app.run()
     app.run(host='0.0.0.0', port=8080)
-=======
-    app.run(host="0.0.0.0")
->>>>>>> 09d59ebc285623d36f2a715bb961761c2f1de794:application.py
+
+
